@@ -26,8 +26,9 @@ Add the last version of the Jetty maven plugin
 ```
 
 start the jetty server with the maven command :
-
+```cmd
 Jetty:run
+```
 
 ### Tomcat
 
