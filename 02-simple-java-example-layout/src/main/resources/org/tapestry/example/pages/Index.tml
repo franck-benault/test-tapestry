@@ -1,0 +1,10 @@
+<html t:type="layout" title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+    <p>
+        Simple example in java with layout.
+        <h3>Hello, ${username} !</h3> 
+    </p>
+
+
+</html>
