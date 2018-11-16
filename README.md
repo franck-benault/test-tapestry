@@ -1,14 +1,17 @@
-# Tapestry by examples
+# Apache Tapestry by examples
 Some examples with Tapestry using Maven tool.
 
-# Some examples
+## Documentation and examples
+### Books
+* Tapestry 5 from Alexander Kolesnikov
+### link
 
 * https://github.com/hlship/tapestry5-tutorial
 * https://baptiste-meurant.developpez.com/tutoriaux/tapestry5-spring-hibernate/ (old example)
 
-# Deployments
-## Embedded servers
-### Jetty
+## Deployments
+### Embedded servers
+#### Jetty
 Add the last version of the Jetty maven plugin
 ```xml
             <plugin>
@@ -31,7 +34,7 @@ start the jetty server with the maven command :
 Jetty:run
 ```
 
-### Tomcat
+#### Tomcat
 
 
 
