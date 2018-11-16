@@ -1,5 +1,6 @@
 # Apache Tapestry by examples
-Some examples with Tapestry using Maven tool.
+Tapestry is component-based Java web framework.
+Here you will found some examples with Tapestry using Maven tool.
 
 ## Documentation and examples
 ### Books
