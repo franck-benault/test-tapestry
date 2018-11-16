@@ -3,7 +3,7 @@
 
     <p>
         Simple example in java.
-        <h3>Hello, ${username} !</h3> 
+        <h3>${message} !</h3> 
     </p>
 
 
