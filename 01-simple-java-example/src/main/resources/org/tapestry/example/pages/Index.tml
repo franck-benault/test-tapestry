@@ -5,6 +5,7 @@
         Simple example in java.
         <h3>${message} !</h3> 
     </p>
+    <p><t:pagelink t:page="Index">Refresh</t:pagelink></p>
 
 
 </html>
