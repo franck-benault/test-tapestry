@@ -1,6 +1,7 @@
 package org.tapestry.example.pages;
 
 
+import org.apache.tapestry5.EventConstants;
 import org.apache.tapestry5.annotations.InjectPage;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.slf4j.Logger;
@@ -23,7 +24,7 @@ public class Index {
 
 	private static Logger logger = LoggerFactory.getLogger(Index.class);
 	
-	@OnEvent(value="Submit", component="userInputForm")
+	@OnEvent(value=EventConstants.SUBMIT, component="userInputForm")
 	public Object onFormSubmit() {
 		logger.info("onSubmit with message = {}", message);
 		another.setPassedMessage(message);
