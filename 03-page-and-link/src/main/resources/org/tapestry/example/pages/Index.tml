@@ -5,10 +5,10 @@
 	
 
 	<p>
-		<t:form t:id="userInputForm">
-			<t:textfield t:value="message" />
+		<form t:type="form" t:id="userInputForm">
+			<input type="text" t:type="textfield" t:value="message" />
 			<input type="submit" value="Submit" />
-		</t:form>
+		</form>
 	</p>
 
 
