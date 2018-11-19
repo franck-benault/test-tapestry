@@ -7,6 +7,7 @@ Here you will found some examples with Tapestry using Maven tool.
 * Tapestry 5 from Alexander Kolesnikov
 ### link
 
+* http://jumpstart.doublenegative.com.au/home.html
 * https://github.com/hlship/tapestry5-tutorial
 * https://baptiste-meurant.developpez.com/tutoriaux/tapestry5-spring-hibernate/ (old example)
 
