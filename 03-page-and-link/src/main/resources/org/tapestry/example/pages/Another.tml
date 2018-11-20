@@ -5,7 +5,7 @@
 
 	<p>Received a new message ${passedMessage}</p>
 
-    <p><t:pagelink t:page="Index">Back to index</t:pagelink></p>
+    <p><a href="#" t:type="pagelink" t:page="Index">Back to index</a></p>
 
 
 </html>
