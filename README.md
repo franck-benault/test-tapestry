@@ -5,11 +5,12 @@ Here you will found some examples with Tapestry using Maven tool.
 ## Documentation and examples
 ### Books
 * Tapestry 5 from Alexander Kolesnikov
-### link
+### links
 
 * http://jumpstart.doublenegative.com.au/home.html
 * https://github.com/hlship/tapestry5-tutorial
 * https://baptiste-meurant.developpez.com/tutoriaux/tapestry5-spring-hibernate/ (old example)
+* http://tapestry.apache.org/cookbook.html 
 
 ## Deployments
 ### Embedded servers
