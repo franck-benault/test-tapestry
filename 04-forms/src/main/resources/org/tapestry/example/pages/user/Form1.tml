@@ -1,0 +1,16 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+	<h1>Formular1</h1>
+
+	<p>
+		<form t:type="form" t:id="userInputForm">
+			<input type="text" t:type="textfield" t:value="username" />
+			<input type="submit" value="Submit" />
+		</form>
+	</p>
+
+    <p><a href="#" t:id="linkToIndex">Back to index</a></p>
+
+
+</html>

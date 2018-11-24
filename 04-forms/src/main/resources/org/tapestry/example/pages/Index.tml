@@ -1,0 +1,12 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+	<h1>Index</h1>
+	
+	<p>The user is ${user.firstName} ${user.lastName}</p>
+
+    <p><a href="#" t:id="linkToForm1">Form example1</a></p>
+
+
+
+</html>
