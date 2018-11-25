@@ -5,6 +5,8 @@ public class Celebrity {
 	private long id;
 	private String firstName;
 	private String lastName;
+	private Occupation occupation;
+	
 	public long getId() {
 		return id;
 	}
@@ -23,11 +25,20 @@ public class Celebrity {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	public Occupation getOccupation() {
+		return occupation;
+	}
+	public void setOccupation(Occupation occupation) {
+		this.occupation = occupation;
+	}
 	
 	@Override
 	public String toString() {
-		return "Celebrity [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
+		return "Celebrity [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", occupation="
+				+ occupation + "]";
 	}
+	
+
 
 	
 }
