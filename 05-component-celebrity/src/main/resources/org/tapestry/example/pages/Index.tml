@@ -1,0 +1,9 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+	<h1>Index</h1>
+
+    <p><a href="#" t:id="linkToShowAll">Show all</a></p>
+
+
+</html>
