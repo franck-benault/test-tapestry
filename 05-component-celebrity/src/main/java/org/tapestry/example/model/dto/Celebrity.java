@@ -1,4 +1,4 @@
-package org.tapestry.example.model;
+package org.tapestry.example.model.dto;
 
 public class Celebrity {
 	
@@ -36,6 +36,12 @@ public class Celebrity {
 	public String toString() {
 		return "Celebrity [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", occupation="
 				+ occupation + "]";
+	}
+	public Celebrity(String firstName, String lastName, Occupation occupation) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.occupation = occupation;
 	}
 	
 
