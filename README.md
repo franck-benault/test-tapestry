@@ -4,7 +4,7 @@ Here you will found some examples with Tapestry using Maven tool.
 
 ## Documentation and examples
 ### Books
-* Tapestry 5 from Alexander Kolesnikov
+* Tapestry 5 from Alexander Kolesnikov (2008)
 ### links
 
 * http://jumpstart.doublenegative.com.au/home.html
