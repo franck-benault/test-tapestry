@@ -52,5 +52,8 @@ Jetty:run
 
 #### Tomcat
 
+## JQuery components
+
+http://tapestry5-jquery.com/
 
 
