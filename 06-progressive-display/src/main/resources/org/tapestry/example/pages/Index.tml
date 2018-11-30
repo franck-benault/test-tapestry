@@ -1,0 +1,13 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+	<body class="container">
+		<h1>Index</h1>
+		<div class="eg">
+			<t:progressiveDisplay t:id="block">
+    			${sleepTimeMillis}
+			</t:progressiveDisplay>
+    	</div>
+	</body>
+
+</html>
