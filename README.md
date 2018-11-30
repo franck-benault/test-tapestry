@@ -30,19 +30,19 @@ Last version April 2017
 #### Jetty
 Add the last version of the Jetty maven plugin
 ```xml
-            <plugin>
-    			<groupId>org.eclipse.jetty</groupId>
-    			<artifactId>jetty-maven-plugin</artifactId>
-    			<version>9.4.12.v20180830</version>
-            <configuration>
-                    <systemProperties>
-                        <systemProperty>
-                            <name>tapestry.execution-mode</name>
-                            <value>development</value>
-                        </systemProperty>
-                    </systemProperties>
-                </configuration>
-            </plugin>
+<plugin>
+    <groupId>org.eclipse.jetty</groupId>
+    <artifactId>jetty-maven-plugin</artifactId>
+    <version>9.4.12.v20180830</version>
+    <configuration>
+        <systemProperties>
+            <systemProperty>
+                <name>tapestry.execution-mode</name>
+                <value>development</value>
+            </systemProperty>
+        </systemProperties>
+    </configuration>
+</plugin>
 ```
 
 start the jetty server with the maven command :
