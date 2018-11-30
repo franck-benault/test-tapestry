@@ -2,6 +2,19 @@
 Tapestry is component-based Java web framework.
 Here you will found some examples with Tapestry using Maven tool.
 
+## Artifacts in central Maven repository
+
+Last version April 2017
+```xml
+<!-- https://mvnrepository.com/artifact/org.apache.tapestry/tapestry-core -->
+<dependency>
+    <groupId>org.apache.tapestry</groupId>
+    <artifactId>tapestry-core</artifactId>
+    <version>5.4.3</version>
+</dependen
+```
+
+
 ## Documentation and examples
 ### Books
 * Tapestry 5 from Alexander Kolesnikov (2008)
