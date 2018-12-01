@@ -1,9 +1,42 @@
 <html title="simple java example"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
 
-	<h1>Index</h1>
+	<h1>Celebrity Collector</h1>
 
-    <p><a href="#" t:id="linkToShowAll">Show all</a></p>
+ 	<p>Log in here :</p>
+ 	<t:form t:id="loginForm">
+ 		<table>
+ 			<tr>
+ 				<td>
+ 					<t:label t:for="userName">
+ 						User name
+ 					</t:label>
+ 				</td>
+ 				<td>
+ 					<input type="text" t:id="userName" t:type="TextField" t:label="User Name" t:value="userName" />
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td>
+ 					<t:label t:for="password">
+ 						Password
+ 					</t:label>
+ 				</td>
+ 				<td>
+ 					<input type="text" t:id="password" t:type="PasswordField" t:value="password" />
+ 				</td>
+ 			</tr>
+ 			<tr>
+ 				<td colspan="2" align="center">
+ 					<input type="submit" value="Log in" />
+ 				</td>
+ 			</tr>
+ 		</table>
+ 	</t:form>
+ 	<p>
+ 		<a href="#" t:type="PageLink" t:page="Registration">
+ 		Or registration</a>
+ 	</p>
 
 
 </html>
