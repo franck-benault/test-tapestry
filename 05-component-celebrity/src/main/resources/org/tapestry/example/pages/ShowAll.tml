@@ -5,12 +5,22 @@
     </head>
 	<body>
 		<h1>All Celebrities in Collection</h1>
-		<table>
+		<table width="90%">
 			<tr t:type="loop" t:source="allCelebrities" t:value="celebrity">
 				<td>
-					rrr
+					<a href="#" t:type="Actionlink" 
+						t:context="celebrity.id" t:id="detailsLink">${celebrity.lastName}</a>
+				</td>
+				<td>
+					${celebrity.firstName}
+				</td>
+				<td>
+					${celebrity.occupation}
 				</td>
 			</tr>
 		</table>
+		<br />
+		<a href="#" t:type="PageLink" t:page="Index">
+		Back to the start page</a>
 	</body>
 </html>

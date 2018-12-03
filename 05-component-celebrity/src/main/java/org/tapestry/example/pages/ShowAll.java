@@ -2,6 +2,8 @@ package org.tapestry.example.pages;
 
 import java.util.List;
 
+import org.apache.tapestry5.annotations.InjectPage;
+import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.SessionState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +18,11 @@ public class ShowAll {
 	
 	@SessionState(create=false)
 	private User user;
+	
+	@InjectPage
+	private Details detailPage;
+	
+	
 	private Celebrity celebrity;
 	
 	public Celebrity getCelebrity() {
@@ -41,6 +48,16 @@ public class ShowAll {
 	public List<Celebrity> getAllCelebrities() {
 		IDataSource dataSource = new MockDataSource();
 		return dataSource.getAllCelebries();
+	}
+	
+	@OnEvent(component="detailsLink")
+	Object onShowDetails(long id) {
+		logger.info("onShowDetails with id {}", id);
+		IDataSource dataSource = new MockDataSource();
+		Celebrity celebrity = dataSource.getCelebrityById(id);
+		detailPage.setCelebrity(celebrity);
+		
+		return detailPage;
 	}
 
 }
