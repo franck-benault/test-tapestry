@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.tapestry5.annotations.InjectPage;
 import org.apache.tapestry5.annotations.OnEvent;
+import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SessionState;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,16 +23,10 @@ public class ShowAll {
 	@InjectPage
 	private Details detailPage;
 	
-	
+	//property create getter and setter
+	@Property
 	private Celebrity celebrity;
 	
-	public Celebrity getCelebrity() {
-		return celebrity;
-	}
-
-	public void setCelebrity(Celebrity celebrity) {
-		this.celebrity = celebrity;
-	}
 
 	public User getUser() {
 		return user;
