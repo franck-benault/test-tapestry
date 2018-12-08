@@ -14,6 +14,10 @@ Last version April 2017
 </dependen
 ```
 
+## Annotation
+```java
+@Property // create getter setter for the tml page
+```
 
 ## Documentation and examples
 ### Books
