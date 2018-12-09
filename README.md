@@ -29,9 +29,10 @@ Last version April 2017
 * https://baptiste-meurant.developpez.com/tutoriaux/tapestry5-spring-hibernate/ (old example)
 * http://tapestry.apache.org/cookbook.html 
 
-### Presentation (JUG)
+### Presentation (ppt)
 
  * http://ruhrjug.de/images/stories/vortrag_013_Igor_Drobiazko/Tapestry5-Ruhrjug.pdf
+ * https://fr.slideshare.net/lorrainejug/tapestry-5719172 (in French)
 
 ## Deployments
 ### Embedded servers
