@@ -15,8 +15,10 @@ Last version April 2017
 ```
 
 ## Tapestry components
+### page definition
+A page or a component is a class associated to a template (tml file in a xml format).
 
- links
+### links
   * ActionLink
   * EventLink
   * PageLink
