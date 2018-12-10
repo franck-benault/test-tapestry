@@ -32,6 +32,14 @@ A page or a component is a class associated to a template (tml file in a xml for
 @InjectPage // inject a page in a component
 ```
 
+```java
+@Persist // put a value in session
+```
+
+```java
+@OnEvent // intercept an event
+```
+
 ## Documentation and examples
 ### Books
 * Tapestry 5 from Alexander Kolesnikov (2008)
