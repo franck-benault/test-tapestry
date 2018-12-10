@@ -26,6 +26,10 @@ Last version April 2017
 @Property // create getter setter for the tml page
 ```
 
+```java
+@InjectPage // inject a page in a component
+```
+
 ## Documentation and examples
 ### Books
 * Tapestry 5 from Alexander Kolesnikov (2008)
