@@ -15,10 +15,11 @@ Last version April 2017
 ```
 
 ## Tapestry components
-* links
-** ActionLink
-** EventLink
-** PageLink
+
+ links
+  * ActionLink
+  * EventLink
+  * PageLink
 
 ## Annotation
 ```java
