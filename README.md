@@ -68,6 +68,15 @@ Example 2
 	Object deleteUser(int id) {
 ```
 
+## Return value of method
+the return value gives the next page to show
+
+Type    | Description
+------- | --------------------------------
+void    | stay in the current page
+String  | page name
+Class   | class of the page
+Object  | instance of a page (@InjectPage
 
 ## Documentation and examples
 ### Books
