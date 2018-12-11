@@ -40,6 +40,35 @@ A page or a component is a class associated to a template (tml file in a xml for
 @OnEvent // intercept an event
 ```
 
+## Event interception
+
+the method can follow the convention name onEventNameFromComponentId
+
+Example 1 : submit button without t:id
+```java
+onSuccess
+```
+
+Example 2 : actionLink with t:id=delete
+```java
+onActionFromDelete(int id) 
+```
+
+A better solution is to use annotation, it allows us to use a better name for the method related to our business.
+
+Example 1
+```java
+	@OnEvent(value=EventConstants.SUBMIT, component="formName")
+	Object searchUser() {
+```
+
+Example 2
+```java
+	@OnEvent(component="delete")
+	Object deleteUser(int id) {
+```
+
+
 ## Documentation and examples
 ### Books
 * Tapestry 5 from Alexander Kolesnikov (2008)
