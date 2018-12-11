@@ -87,6 +87,7 @@ Object  | instance of a page (@InjectPage
 * https://github.com/hlship/tapestry5-tutorial
 * https://baptiste-meurant.developpez.com/tutoriaux/tapestry5-spring-hibernate/ (old example)
 * http://tapestry.apache.org/cookbook.html 
+* https://www.infoq.com/articles/tapestry5-intro
 
 ### Presentation (ppt)
 
