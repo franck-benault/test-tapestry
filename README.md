@@ -15,15 +15,19 @@ Last version April 2017
 ```
 
 ## Tapestry components
-### page definition
+### Page and components
 A page or a component is a class associated to a template (tml file in a xml format).
 
-### links
+A page may use several components.
+
+A component may use several components.
+
+### Links
   * ActionLink
   * EventLink
   * PageLink
 
-## Annotation
+## Annotations
 ```java
 @Property // create getter setter for the tml page
 ```
