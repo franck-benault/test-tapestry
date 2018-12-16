@@ -52,6 +52,10 @@ if your main package is "org.example", the main subpackages use by Tapestry are 
 @OnEvent // intercept an event
 ```
 
+```java
+@Parameter // parameter value for a component
+```
+
 ## Event interception
 
 the method can follow the convention name onEventNameFromComponentId
