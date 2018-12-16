@@ -22,6 +22,14 @@ A page may use several components.
 
 A component may use several components.
 
+### Packages orginazation
+
+if your main package is "org.example", the main subpackages use by Tapestry are :
+* pages
+* components
+* services
+* mixins
+
 ### Links
   * ActionLink
   * EventLink
