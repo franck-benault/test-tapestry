@@ -18,6 +18,8 @@ Last version April 2017
 ### Page and components
 A page or a component is a class associated to a template (tml file in a xml format).
 
+A component must have a class. A component may have a template.
+
 A page may use several components.
 
 A component may use several components.
