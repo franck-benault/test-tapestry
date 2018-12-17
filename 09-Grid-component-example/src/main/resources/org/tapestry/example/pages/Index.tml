@@ -1,0 +1,8 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+	<body>
+		<t:grid t:source="list" reorder="firstname,lastname,age"/>
+    </body>
+ 
+
+</html>
