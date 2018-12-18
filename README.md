@@ -51,7 +51,7 @@ if your main package is "org.example", the main subpackages use by Tapestry are 
 ```
 
 ```java
-@OnEvent // intercept an event
+@OnEvent // intercept an event, can be used for an ActionLink
 ```
 
 ```java
