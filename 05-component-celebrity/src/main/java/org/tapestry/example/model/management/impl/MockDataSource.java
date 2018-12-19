@@ -1,6 +1,7 @@
 package org.tapestry.example.model.management.impl;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.tapestry.example.model.dto.Celebrity;
@@ -12,9 +13,9 @@ public class MockDataSource implements IDataSource {
 	private List<Celebrity> celebrities = new ArrayList<>();
 	
 	public MockDataSource() {
-		addCelebrity(new Celebrity("John", "Snow", Occupation.ACTOR));
-		addCelebrity(new Celebrity("John", "Lenon", Occupation.SINGER));
-		addCelebrity(new Celebrity("Patty", "Smith", Occupation.SINGER));
+		addCelebrity(new Celebrity("John", "Snow", Occupation.ACTOR, new Date()));
+		addCelebrity(new Celebrity("John", "Lenon", Occupation.SINGER, new Date()));
+		addCelebrity(new Celebrity("Patty", "Smith", Occupation.SINGER, new Date()));
 	}
 
 	@Override

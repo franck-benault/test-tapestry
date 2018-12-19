@@ -1,5 +1,7 @@
 package org.tapestry.example.pages;
 
+import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import org.apache.tapestry5.annotations.InjectPage;
@@ -43,6 +45,10 @@ public class ShowAll {
 	public List<Celebrity> getAllCelebrities() {
 		IDataSource dataSource = new MockDataSource();
 		return dataSource.getAllCelebries();
+	}
+	
+	public Format getDateFormat() {
+		return new SimpleDateFormat("yyyy-MM-dd");
 	}
 	
 	@OnEvent(component="detailsLink")

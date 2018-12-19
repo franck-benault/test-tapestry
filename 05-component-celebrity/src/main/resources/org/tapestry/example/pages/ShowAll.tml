@@ -12,6 +12,9 @@
 						t:context="celebrity.id" t:id="detailsLink">${celebrity.lastName}</a>
 				</td>
 				<td>
+					<t:output t:format="dateFormat" t:value="celebrity.dateOfBirth" />
+				</td>
+				<td>
 					${celebrity.firstName}
 				</td>
 				<td>

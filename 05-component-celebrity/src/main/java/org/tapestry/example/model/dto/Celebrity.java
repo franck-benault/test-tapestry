@@ -1,12 +1,21 @@
 package org.tapestry.example.model.dto;
 
+import java.util.Date;
+
 public class Celebrity {
 	
 	private long id;
 	private String firstName;
 	private String lastName;
 	private Occupation occupation;
+	private Date dateOfBirth;
 	
+	public Date getDateOfBirth() {
+		return dateOfBirth;
+	}
+	public void setDateOfBirth(Date dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
 	public long getId() {
 		return id;
 	}
@@ -35,14 +44,19 @@ public class Celebrity {
 	@Override
 	public String toString() {
 		return "Celebrity [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", occupation="
-				+ occupation + "]";
+				+ occupation + ", dateOfBirth=" + dateOfBirth + "]";
 	}
-	public Celebrity(String firstName, String lastName, Occupation occupation) {
+	public Celebrity(String firstName, String lastName, Occupation occupation, Date dateOfBirth) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.occupation = occupation;
+		this.dateOfBirth = dateOfBirth;
 	}
+	
+
+	
+
 	
 
 

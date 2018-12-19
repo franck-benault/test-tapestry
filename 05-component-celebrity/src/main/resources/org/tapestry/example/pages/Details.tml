@@ -5,6 +5,23 @@
     </head>
 	<body>
 		<h1>Celebrity detail</h1>
-
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td>${celebrity.firstName}</td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td>${celebrity.lastName}</td>
+			</tr>
+			<tr>
+				<td>Date of birth:</td>
+				<td><t:output t:format="dateFormat" t:value="celebrity.dateOfBirth" /></td>
+			</tr>
+			<tr>
+				<td>Occupation:</td>
+				<td>${celebrity.occupation}</td>
+			</tr>
+		</table>
 	</body>
 </html>
