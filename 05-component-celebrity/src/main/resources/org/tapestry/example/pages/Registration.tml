@@ -1,2 +1,18 @@
 <html title="simple java example"
       xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+ 	<head>
+    	<title>Celebrity Collector : Registration</title>
+    </head>
+	<body>
+		<h1>Registration</h1>
+		<t:form t:id="registrationForm">
+	    <table>
+	    	<tr>
+	    		<td>User name</td>
+	    		<td><input type="text" t:type="textfield" t:id="userName" t:value="userName" />
+	    		</td>
+	    	</tr>
+	    </table>
+		</t:form>
+	</body>      
+</html>
