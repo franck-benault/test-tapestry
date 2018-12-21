@@ -12,5 +12,8 @@ public class Registration {
 	
 	@Property
 	private String password2;
+	
+	@Property
+	private String gender;
 
 }

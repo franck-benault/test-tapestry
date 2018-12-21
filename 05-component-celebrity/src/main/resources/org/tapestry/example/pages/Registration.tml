@@ -21,8 +21,24 @@
 	    		<td>Repeat password</td>
 	    		<td><input type="text" t:type="passwordfield" t:id="password2" t:value="password2" />
 	    		</td>
-	    	</tr>	     	
+	    	</tr>	  
+	    	<tr>
+	    		<td>Gender:</td>
+	    		<td>
+	    		<t:radiogroup t:value="gender">
+	    		<input type="radio" t:type="radio" t:value="literal:M" />Male
+	    		<input type="radio" t:type="radio" t:value="literal:F" />Female	    		
+	    		</t:radiogroup>
+	    		</td>
+	    	</tr>	
+	    	   	
 	    </table>
 		</t:form>
+		<br />
+		 	<p>
+ 		<a href="#" t:type="PageLink" t:page="Index">
+ 		Back to start page</a>
+ 	</p>
+		
 	</body>      
 </html>
