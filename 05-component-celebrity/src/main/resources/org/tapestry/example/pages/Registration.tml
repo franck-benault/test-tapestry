@@ -12,6 +12,16 @@
 	    		<td><input type="text" t:type="textfield" t:id="userName" t:value="userName" />
 	    		</td>
 	    	</tr>
+	      	<tr>
+	    		<td>Password</td>
+	    		<td><input type="text" t:type="passwordfield" t:id="password" t:value="password" />
+	    		</td>
+	    	</tr>	
+	    	<tr>
+	    		<td>Repeat password</td>
+	    		<td><input type="text" t:type="passwordfield" t:id="password2" t:value="password2" />
+	    		</td>
+	    	</tr>	     	
 	    </table>
 		</t:form>
 	</body>      

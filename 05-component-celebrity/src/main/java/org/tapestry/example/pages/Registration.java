@@ -6,5 +6,11 @@ public class Registration {
 	
 	@Property
 	private String userName;
+	
+	@Property
+	private String password;
+	
+	@Property
+	private String password2;
 
 }
