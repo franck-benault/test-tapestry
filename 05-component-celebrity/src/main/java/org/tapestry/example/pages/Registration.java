@@ -15,5 +15,9 @@ public class Registration {
 	
 	@Property
 	private String gender;
+	
+	void onSubmitFromRegistrationForm() {
+		System.out.println("The form has been submitted with gender "+gender);
+	}
 
 }

@@ -33,6 +33,7 @@
 	    	</tr>	
 	    	   	
 	    </table>
+	    <input type="submit" value="submit" />
 		</t:form>
 		<br />
 		 	<p>
