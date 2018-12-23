@@ -1,5 +1,6 @@
 package org.tapestry.example.pages;
 
+import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.tapestry.example.model.security.Gender;
 
@@ -16,6 +17,13 @@ public class Registration {
 	
 	@Property
 	private Gender gender;
+	
+	@Property
+	private String email;
+	
+	@Persist
+	@Property
+	private boolean subscribe;
 	
 	public Gender getMale() {
 		return Gender.MALE;

@@ -1,5 +1,5 @@
 <html title="simple java example"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
  	<head>
     	<title>Celebrity Collector : Registration</title>
     </head>
@@ -31,6 +31,21 @@
 	    		</t:radiogroup>
 	    		</td>
 	    	</tr>	
+	    	<tr>
+	    		<t:if t:test="subscribe">
+	    		<td>email</td>
+	    		<td>
+	    		<input type="text" t:type="textfield" t:id="email" t:value="email" />
+	    		</td>
+				<p:else> 
+	    		<td colspan="2">
+	    		<input type="checkbox" t:type="checkbox" t:value="subscribe" 
+	    		onclick="this.form.submit()" />Check the box to subscribe to our stupid Newsletter
+	    		</td>
+				</p:else>
+	    		</t:if>
+	    	</tr>	
+	    	
 	    	   	
 	    </table>
 	    <input type="submit" value="submit" />
