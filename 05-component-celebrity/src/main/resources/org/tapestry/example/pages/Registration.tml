@@ -26,8 +26,8 @@
 	    		<td>Gender:</td>
 	    		<td>
 	    		<t:radiogroup t:value="gender">
-	    		<input type="radio" t:type="radio" t:value="literal:M" />Male
-	    		<input type="radio" t:type="radio" t:value="literal:F" />Female	    		
+	    		<input type="radio" t:type="radio" t:value="male" />Male
+	    		<input type="radio" t:type="radio" t:value="female" />Female	    		
 	    		</t:radiogroup>
 	    		</td>
 	    	</tr>	

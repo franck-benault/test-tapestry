@@ -1,6 +1,7 @@
 package org.tapestry.example.pages;
 
 import org.apache.tapestry5.annotations.Property;
+import org.tapestry.example.model.security.Gender;
 
 public class Registration {
 	
@@ -14,7 +15,15 @@ public class Registration {
 	private String password2;
 	
 	@Property
-	private String gender;
+	private Gender gender;
+	
+	public Gender getMale() {
+		return Gender.MALE;
+	}
+	
+	public Gender getFemale() {
+		return Gender.FEMALE;
+	}
 	
 	void onSubmitFromRegistrationForm() {
 		System.out.println("The form has been submitted with gender "+gender);
