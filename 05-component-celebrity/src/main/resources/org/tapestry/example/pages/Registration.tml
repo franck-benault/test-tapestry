@@ -31,20 +31,29 @@
 	    		</t:radiogroup>
 	    		</td>
 	    	</tr>	
-	    	<tr>
 	    		<t:if t:test="subscribe">
+	    		<tr>
 	    		<td>email</td>
 	    		<td>
 	    		<input type="text" t:type="textfield" t:id="email" t:value="email" />
 	    		</td>
+	    		</tr>
+	    		<tr>
+	    		<td colspan="2">
+	    		<input type="checkbox" t:type="checkbox" t:value="unsubscribe" 
+	    		onclick="this.form.submit()" />Check the box to subscribe to our stupid Newsletter
+	    		</td>
+	    		</tr>
 				<p:else> 
+				<tr>	
 	    		<td colspan="2">
 	    		<input type="checkbox" t:type="checkbox" t:value="subscribe" 
 	    		onclick="this.form.submit()" />Check the box to subscribe to our stupid Newsletter
 	    		</td>
+	  	    	</tr>	  		
 				</p:else>
 	    		</t:if>
-	    	</tr>	
+
 	    	
 	    	   	
 	    </table>

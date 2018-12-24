@@ -6,15 +6,18 @@ import org.tapestry.example.model.security.Gender;
 
 public class Registration {
 	
+	@Persist
 	@Property
 	private String userName;
 	
+	@Persist
 	@Property
 	private String password;
 	
 	@Property
 	private String password2;
 	
+	@Persist
 	@Property
 	private Gender gender;
 	
@@ -24,6 +27,10 @@ public class Registration {
 	@Persist
 	@Property
 	private boolean subscribe;
+	
+	@Property
+	private boolean unsubscribe;
+	
 	
 	public Gender getMale() {
 		return Gender.MALE;
@@ -35,6 +42,9 @@ public class Registration {
 	
 	void onSubmitFromRegistrationForm() {
 		System.out.println("The form has been submitted with gender "+gender);
+		System.out.println("The form has been submitted with unsubscribe "+unsubscribe);
+		
+		if(unsubscribe) subscribe = false;
 	}
 
 }
