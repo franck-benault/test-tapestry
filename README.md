@@ -85,7 +85,7 @@ Example 2
 	@OnEvent(component="delete")
 	Object deleteUser(int id) {
 ```
-### Event and Form
+### Events and Form
 * RenderEvents
   * prepareForRender
   * prepare
@@ -95,7 +95,10 @@ Example 2
   * validate
   * failure or success
   * submit
-
+  
+ ### Events and Submit
+ 
+ Only one event : SELECTED
 
 ## Return value of method
 the return value gives the next page to show
