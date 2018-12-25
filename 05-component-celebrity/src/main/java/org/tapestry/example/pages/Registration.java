@@ -50,23 +50,27 @@ public class Registration {
 	    action = "buttonSubmit";
 	}
 	
+	@OnEvent(component = "resetButton", value = EventConstants.SELECTED)
+	void resetButtonClicked() {
+		System.out.println("reset button clicked...");
+	    action = "buttonReset";
+	}
+	
 	@OnEvent(component="registrationForm" ,value = EventConstants.SUCCESS)
 	public void success() {
 
 		System.out.println("The form has been successed with action "+action);
 	}
 	
-	@OnEvent(value=EventConstants.SUBMIT, component="registrationForm")
+	@OnEvent(component="registrationForm", value=EventConstants.SUBMIT)
 	public void onSubmitButton() {
 		System.out.println("The form has been submitted with action "+action);
-		System.out.println("The form has been submitted with gender "+gender);
-		System.out.println("The form has been submitted with unsubscribe "+unsubscribe);
 		
 		if(unsubscribe) subscribe = false;
 		
 		if(action!=null) {
 			
-		}
+		} 
 	}
 	
 

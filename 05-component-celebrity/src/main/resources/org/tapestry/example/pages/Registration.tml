@@ -57,7 +57,8 @@
 	    	
 	    	   	
 	    </table>
-	    <input type="submit" t:type="submit" t:id="submitButton" value="submit" />
+	    <input type="submit" t:type="submit" t:id="submitButton" value="submit" /> <br />
+	    <input type="submit" t:type="submit" t:id="resetButton" value="reset" />
 		</t:form>
 		<br />
 		 	<p>
