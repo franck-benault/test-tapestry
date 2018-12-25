@@ -87,14 +87,14 @@ Example 2
 ```
 ### Event and Form
 * RenderEvents
- * prepareForRender
- * prepare
+  * prepareForRender
+  * prepare
 * Submit Events
- * prepareForSubmit
- * prepare
- * validate
- * failure or success
- * submit
+  * prepareForSubmit
+  * prepare
+  * validate
+  * failure or success
+  * submit
 
 
 ## Return value of method
