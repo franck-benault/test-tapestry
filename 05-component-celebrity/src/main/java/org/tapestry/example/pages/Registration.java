@@ -1,9 +1,14 @@
 package org.tapestry.example.pages;
 
 import org.apache.tapestry5.EventConstants;
+import org.apache.tapestry5.SelectModel;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.ioc.Messages;
+import org.apache.tapestry5.ioc.annotations.Inject;
+import org.apache.tapestry5.util.EnumSelectModel;
+import org.tapestry.example.model.dto.Country;
 import org.tapestry.example.model.security.Gender;
 
 public class Registration {
@@ -38,6 +43,19 @@ public class Registration {
 	@Property
 	private boolean unsubscribe;
 	
+	@Persist
+	@Property
+	private Country country;
+	
+	@Inject
+	private Messages messages;
+	
+	public SelectModel getCountries() {
+		
+		return new EnumSelectModel(Country.class, messages);
+	}
+	
+	
 	private String action;
 	
 	
@@ -48,6 +66,7 @@ public class Registration {
 	public Gender getFemale() {
 		return Gender.FEMALE;
 	}
+	
 	
 	@OnEvent(component = "submitButton", value = EventConstants.SELECTED)
 	public void submitButtonClicked() {
@@ -61,14 +80,23 @@ public class Registration {
 	    action = RESET;
 	}
 	
+	
+	
+	@OnEvent(component="registrationForm" ,value = EventConstants.PREPARE)
+	public void formPrepare() {
+
+		System.out.println("The form has been prepared with action "+action);
+	}
+	
 	@OnEvent(component="registrationForm" ,value = EventConstants.VALIDATE)
 	public void formValidate() {
 
 		System.out.println("The form has been validated with action "+action);
 	}
 	
+	
 	@OnEvent(component="registrationForm" ,value = EventConstants.SUCCESS)
-	public void success() {
+	public void formSuccess() {
 
 		System.out.println("The form has been successed with action "+action);
 	}

@@ -53,7 +53,12 @@
 	  	    	</tr>	  		
 				</p:else>
 	    		</t:if>
-
+	    		<tr>
+	    		<td>Country</td>
+	    		<td>
+	    		<t:select t:model="countries" t:id="selectCountry" t:value="country" />
+	    		</td>
+				</tr>
 	    	
 	    	   	
 	    </table>
