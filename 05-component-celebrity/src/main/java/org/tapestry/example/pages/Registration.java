@@ -27,6 +27,7 @@ public class Registration {
 	@Property
 	private Gender gender;
 	
+	@Persist
 	@Property
 	private String email;
 	
@@ -49,15 +50,21 @@ public class Registration {
 	}
 	
 	@OnEvent(component = "submitButton", value = EventConstants.SELECTED)
-	void submitButtonClicked() {
+	public void submitButtonClicked() {
 		System.out.println("submit button clicked...");
 	    action = SUBMIT;
 	}
 	
 	@OnEvent(component = "resetButton", value = EventConstants.SELECTED)
-	void resetButtonClicked() {
+	public void resetButtonClicked() {
 		System.out.println("reset button clicked...");
 	    action = RESET;
+	}
+	
+	@OnEvent(component="registrationForm" ,value = EventConstants.VALIDATE)
+	public void formValidate() {
+
+		System.out.println("The form has been validated with action "+action);
 	}
 	
 	@OnEvent(component="registrationForm" ,value = EventConstants.SUCCESS)
