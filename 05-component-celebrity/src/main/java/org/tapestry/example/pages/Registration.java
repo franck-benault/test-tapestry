@@ -8,6 +8,10 @@ import org.tapestry.example.model.security.Gender;
 
 public class Registration {
 	
+	private static final String RESET ="RESET";
+	private static final String SUBMIT="SUBMIT";
+			
+	
 	@Persist
 	@Property
 	private String userName;
@@ -47,13 +51,13 @@ public class Registration {
 	@OnEvent(component = "submitButton", value = EventConstants.SELECTED)
 	void submitButtonClicked() {
 		System.out.println("submit button clicked...");
-	    action = "buttonSubmit";
+	    action = SUBMIT;
 	}
 	
 	@OnEvent(component = "resetButton", value = EventConstants.SELECTED)
 	void resetButtonClicked() {
 		System.out.println("reset button clicked...");
-	    action = "buttonReset";
+	    action = RESET;
 	}
 	
 	@OnEvent(component="registrationForm" ,value = EventConstants.SUCCESS)
@@ -68,9 +72,19 @@ public class Registration {
 		
 		if(unsubscribe) subscribe = false;
 		
-		if(action!=null) {
+		if(SUBMIT.equals(action)) {
+			System.out.println("submit...");
+		} else if(RESET.equals(action)) { 
+			System.out.println("clear data...");
+			userName = null;
+			password = null;
+			gender = null;
+			email = null;
 			
-		} 
+			
+		} else {
+			System.out.println("subscribe/ unsubscribe...");
+		}
 	}
 	
 
