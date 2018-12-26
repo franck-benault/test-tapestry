@@ -54,6 +54,10 @@ if your main package is "org.example", the main subpackages use by Tapestry are 
 * Submit
 * Select
 
+### Advanced components
+* Grid
+* DateField
+
 ## Annotations
 ```java
 @Property // create getter setter for the tml page
