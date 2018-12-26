@@ -16,6 +16,8 @@ public class MockDataSource implements IDataSource {
 		addCelebrity(new Celebrity("John", "Snow", Occupation.ACTOR, new Date()));
 		addCelebrity(new Celebrity("John", "Lenon", Occupation.SINGER, new Date()));
 		addCelebrity(new Celebrity("Patty", "Smith", Occupation.SINGER, new Date()));
+		addCelebrity(new Celebrity("Pattou", "Smouth", Occupation.ACTIST, new Date()));
+		addCelebrity(new Celebrity("Pattoune", "Smouthy", Occupation.ACTIST, new Date()));
 	}
 
 	@Override
