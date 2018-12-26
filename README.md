@@ -36,6 +36,23 @@ if your main package is "org.example", the main subpackages use by Tapestry are 
   * ActionLink
   * EventLink
   * PageLink
+  
+  
+## Tapestry main components
+### Simple components
+* TextField 
+* PasswordField
+* Label
+* PageLink
+* ActionLink
+* Loop
+* If
+* output
+* radioGroup
+* Radio
+* Checkbox
+* Submit
+* Select
 
 ## Annotations
 ```java
@@ -57,6 +74,7 @@ if your main package is "org.example", the main subpackages use by Tapestry are 
 ```java
 @Parameter // parameter value for a component
 ```
+
 
 ## Event interception
 
