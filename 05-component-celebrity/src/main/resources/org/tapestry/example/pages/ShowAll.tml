@@ -5,23 +5,7 @@
     </head>
 	<body>
 		<h1>All Celebrities in Collection</h1>
-		<table width="90%">
-			<tr t:type="loop" t:source="allCelebrities" t:value="celebrity">
-				<td>
-					<a href="#" t:type="Actionlink" 
-						t:context="celebrity.id" t:id="detailsLink">${celebrity.lastName}</a>
-				</td>
-				<td>
-					<t:output t:format="dateFormat" t:value="celebrity.dateOfBirth" />
-				</td>
-				<td>
-					${celebrity.firstName}
-				</td>
-				<td>
-					${celebrity.occupation}
-				</td>
-			</tr>
-		</table>
+		<t:grid t:source="allCelebrities" />
 		<br />
 		<a href="#" t:type="PageLink" t:page="Index">
 		Back to the start page</a>

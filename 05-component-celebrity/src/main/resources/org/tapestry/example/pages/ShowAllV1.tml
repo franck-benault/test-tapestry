@@ -1,0 +1,29 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+ 	<head>
+    	<title>Celebrity Collector : All Celebrities</title>
+    </head>
+	<body>
+		<h1>All Celebrities in Collection</h1>
+		<table width="90%">
+			<tr t:type="loop" t:source="allCelebrities" t:value="celebrity">
+				<td>
+					<a href="#" t:type="Actionlink" 
+						t:context="celebrity.id" t:id="detailsLink">${celebrity.lastName}</a>
+				</td>
+				<td>
+					<t:output t:format="dateFormat" t:value="celebrity.dateOfBirth" />
+				</td>
+				<td>
+					${celebrity.firstName}
+				</td>
+				<td>
+					${celebrity.occupation}
+				</td>
+			</tr>
+		</table>
+		<br />
+		<a href="#" t:type="PageLink" t:page="Index">
+		Back to the start page</a>
+	</body>
+</html>

@@ -17,9 +17,9 @@ import org.tapestry.example.model.management.IDataSource;
 import org.tapestry.example.model.management.impl.MockDataSource;
 import org.tapestry.example.model.security.User;
 
-public class ShowAll {
+public class ShowAllV1 {
 	
-	private static Logger logger = LoggerFactory.getLogger(ShowAll.class);
+	private static Logger logger = LoggerFactory.getLogger(ShowAllV1.class);
 	
 	@SessionState(create=false)
 	private User user;
@@ -55,7 +55,7 @@ public class ShowAll {
 		return new SimpleDateFormat("yyyy-MM-dd");
 	}
 	
-	/*@OnEvent(component="detailsLink")
+	@OnEvent(component="detailsLink")
 	Object onShowDetails(long id) {
 		logger.info("onShowDetails with id {}", id);
 		IDataSource dataSource = new MockDataSource();
@@ -63,6 +63,6 @@ public class ShowAll {
 		detailPage.setCelebrity(celebrity);
 		
 		return detailPage;
-	}*/
+	}
 
 }
