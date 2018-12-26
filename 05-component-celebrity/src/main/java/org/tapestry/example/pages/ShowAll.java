@@ -7,7 +7,9 @@ import java.util.List;
 import org.apache.tapestry5.annotations.InjectPage;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.annotations.Service;
 import org.apache.tapestry5.annotations.SessionState;
+import org.apache.tapestry5.ioc.annotations.Inject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.tapestry.example.model.dto.Celebrity;
@@ -29,6 +31,9 @@ public class ShowAll {
 	@Property
 	private Celebrity celebrity;
 	
+	
+	@Inject
+	IDataSource dataSource;
 
 	public User getUser() {
 		return user;
@@ -43,7 +48,6 @@ public class ShowAll {
 	}
 	
 	public List<Celebrity> getAllCelebrities() {
-		IDataSource dataSource = new MockDataSource();
 		return dataSource.getAllCelebries();
 	}
 	
