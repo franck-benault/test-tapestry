@@ -56,7 +56,9 @@
 	    		<tr>
 	    		<td>Country</td>
 	    		<td>
+	    		<t:zone t:id="countryModelZone" id="countryModelZone" style="display: inline;">
 	    		<t:select t:model="countries" t:id="selectCountry" t:value="country" />
+	    		</t:zone>
 	    		</td>
 				</tr>
 	    	

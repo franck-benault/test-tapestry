@@ -2,11 +2,15 @@ package org.tapestry.example.pages;
 
 import org.apache.tapestry5.EventConstants;
 import org.apache.tapestry5.SelectModel;
+import org.apache.tapestry5.annotations.InjectComponent;
 import org.apache.tapestry5.annotations.OnEvent;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
+import org.apache.tapestry5.corelib.components.Zone;
 import org.apache.tapestry5.ioc.Messages;
 import org.apache.tapestry5.ioc.annotations.Inject;
+import org.apache.tapestry5.services.Request;
+import org.apache.tapestry5.services.ajax.AjaxResponseRenderer;
 import org.apache.tapestry5.util.EnumSelectModel;
 import org.tapestry.example.model.dto.Country;
 import org.tapestry.example.model.security.Gender;
@@ -67,6 +71,9 @@ public class Registration {
 		return Gender.FEMALE;
 	}
 	
+	@InjectComponent
+	private Zone countryModelZone;
+	
 	
 	@OnEvent(component = "submitButton", value = EventConstants.SELECTED)
 	public void submitButtonClicked() {
@@ -115,6 +122,7 @@ public class Registration {
 			password = null;
 			gender = null;
 			email = null;
+			country = null;
 			
 			
 		} else {
