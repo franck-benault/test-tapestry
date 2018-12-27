@@ -1,11 +1,19 @@
 <html title="simple java example"
-      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
  	<head>
     	<title>Celebrity Collector : All Celebrities</title>
     </head>
 	<body>
 		<h1>All Celebrities in Collection</h1>
-		<t:grid t:source="allCelebrities"  rowsPerPage="3" />
+		<t:grid t:source="allCelebrities" row="celebrity" 
+		exclude="id"
+		reorder="lastName,firstName,occupation,dateOfBirth"
+		rowsPerPage="3" >
+			<p:lastNameCell>
+				<t:actionlink 
+						context="celebrity.id" t:id="detailsLink">${celebrity.lastName}</t:actionlink>
+			</p:lastNameCell>
+		</t:grid>
 		<br />
 		<a href="#" t:type="PageLink" t:page="Index">
 		Back to the start page</a>

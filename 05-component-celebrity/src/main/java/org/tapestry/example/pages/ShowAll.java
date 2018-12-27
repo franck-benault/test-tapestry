@@ -55,7 +55,7 @@ public class ShowAll {
 		return new SimpleDateFormat("yyyy-MM-dd");
 	}
 	
-	/*@OnEvent(component="detailsLink")
+	@OnEvent(component="detailsLink")
 	Object onShowDetails(long id) {
 		logger.info("onShowDetails with id {}", id);
 		IDataSource dataSource = new MockDataSource();
@@ -63,6 +63,6 @@ public class ShowAll {
 		detailPage.setCelebrity(celebrity);
 		
 		return detailPage;
-	}*/
+	}
 
 }
