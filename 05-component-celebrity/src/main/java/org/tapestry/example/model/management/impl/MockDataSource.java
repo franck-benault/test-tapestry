@@ -21,8 +21,8 @@ public class MockDataSource implements IDataSource {
 	}
 
 	@Override
-	public List<Celebrity> getAllCelebries() {
-		System.out.println("getAllCelbries() ...");
+	public List<Celebrity> getAllCelebrities() {
+		System.out.println("getAllCelebrities() ...");
 		return celebrities;
 	}
 
@@ -43,6 +43,16 @@ public class MockDataSource implements IDataSource {
 		c.setId(newId);
 		celebrities.add(c);
 		
+	}
+
+	@Override
+	public List<Celebrity> getRange(int startIndex, int endIndex) {
+		List<Celebrity> result = new ArrayList<>();
+		for(int i = startIndex; i<=endIndex; i++) {
+			result.add(celebrities.get(i));
+		}
+		
+		return result;
 	}
 
 }

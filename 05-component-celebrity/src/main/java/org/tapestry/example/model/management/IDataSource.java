@@ -6,8 +6,9 @@ import org.tapestry.example.model.dto.Celebrity;
 
 public interface IDataSource {
 	
-	public List<Celebrity> getAllCelebries();
-	public Celebrity getCelebrityById(long id);
-	public void addCelebrity(Celebrity c);
+	List<Celebrity> getAllCelebrities();
+	Celebrity getCelebrityById(long id);
+	void addCelebrity(Celebrity c);
+	List<Celebrity> getRange(int startIndex, int endIndex); 
 
 }

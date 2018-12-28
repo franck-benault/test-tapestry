@@ -5,7 +5,7 @@
     </head>
 	<body>
 		<h1>All Celebrities in Collection</h1>
-		<t:grid t:source="allCelebrities" row="celebrity" 
+		<t:grid t:source="celebritySource" row="celebrity" 
 		exclude="id"
 		reorder="lastName,firstName,occupation,dateOfBirth"
 		rowsPerPage="3" >

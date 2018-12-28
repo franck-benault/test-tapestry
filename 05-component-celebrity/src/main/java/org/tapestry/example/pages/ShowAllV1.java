@@ -48,7 +48,7 @@ public class ShowAllV1 {
 	}
 	
 	public List<Celebrity> getAllCelebrities() {
-		return dataSource.getAllCelebries();
+		return dataSource.getAllCelebrities();
 	}
 	
 	public Format getDateFormat() {
