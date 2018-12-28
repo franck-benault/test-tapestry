@@ -22,6 +22,7 @@ public class MockDataSource implements IDataSource {
 
 	@Override
 	public List<Celebrity> getAllCelebries() {
+		System.out.println("getAllCelbries() ...");
 		return celebrities;
 	}
 
