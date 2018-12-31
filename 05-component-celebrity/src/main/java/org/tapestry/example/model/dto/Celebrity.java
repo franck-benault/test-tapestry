@@ -4,11 +4,16 @@ import java.util.Date;
 
 public class Celebrity {
 	
+
+	
+
+	
 	private long id;
 	private String firstName;
 	private String lastName;
 	private Occupation occupation;
 	private Date dateOfBirth;
+	private String biography;
 	
 	public Date getDateOfBirth() {
 		return dateOfBirth;
@@ -46,12 +51,18 @@ public class Celebrity {
 		return "Celebrity [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", occupation="
 				+ occupation + ", dateOfBirth=" + dateOfBirth + "]";
 	}
-	public Celebrity(String firstName, String lastName, Occupation occupation, Date dateOfBirth) {
+	/*public Celebrity(String firstName, String lastName, Occupation occupation, Date dateOfBirth) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.occupation = occupation;
 		this.dateOfBirth = dateOfBirth;
+	}*/
+	public String getBiography() {
+		return biography;
+	}
+	public void setBiography(String biography) {
+		this.biography = biography;
 	}
 	
 

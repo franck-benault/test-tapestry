@@ -13,11 +13,24 @@ public class MockDataSource implements IDataSource {
 	private List<Celebrity> celebrities = new ArrayList<>();
 	
 	public MockDataSource() {
-		addCelebrity(new Celebrity("John", "Snow", Occupation.ACTOR, new Date()));
-		addCelebrity(new Celebrity("John", "Lenon", Occupation.SINGER, new Date()));
-		addCelebrity(new Celebrity("Patty", "Smith", Occupation.SINGER, new Date()));
-		addCelebrity(new Celebrity("Pattou", "Smouth", Occupation.ARTIST, new Date()));
-		addCelebrity(new Celebrity("Pattoune", "Smouthy", Occupation.ARTIST, new Date()));
+		addCelebrity(createCelebrity("John", "Snow", Occupation.ACTOR, new Date()));
+		addCelebrity(createCelebrity("John", "Lenon", Occupation.SINGER, new Date()));
+		addCelebrity(createCelebrity("Patty", "Smith", Occupation.SINGER, new Date()));
+		addCelebrity(createCelebrity("Pattou", "Smouth", Occupation.ARTIST, new Date()));
+		addCelebrity(createCelebrity("Pattoune", "Smouthy", Occupation.ARTIST, new Date()));
+	}
+	
+	private Celebrity createCelebrity(String firstName,
+			String lastName, Occupation occupation, Date dateOfBirth) {
+		
+		Celebrity celebrity = new Celebrity();
+		celebrity.setFirstName(firstName);
+		celebrity.setLastName(lastName);		
+		celebrity.setOccupation(occupation);
+		celebrity.setDateOfBirth(dateOfBirth);
+		return celebrity;
+				
+		
 	}
 
 	@Override

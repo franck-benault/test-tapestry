@@ -1,0 +1,11 @@
+<html title="simple java example"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd" xmlns:p="tapestry:parameter">
+ 	<head>
+    	<title>Add Celebrity</title>
+    </head>
+	<body>
+		<h1>Add Celebrity</h1>
+		<t:beaneditform t:id="celebrity" />
+		
+	</body>      
+</html>
