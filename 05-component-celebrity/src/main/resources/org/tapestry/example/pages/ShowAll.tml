@@ -15,6 +15,9 @@
 			</p:lastNameCell>
 		</t:grid>
 		<br />
+		<a href="#" t:type="PageLink" t:page="AddCelebrity">
+		Add a new celebrity</a>
+		<br />
 		<a href="#" t:type="PageLink" t:page="Index">
 		Back to the start page</a>
 	</body>
