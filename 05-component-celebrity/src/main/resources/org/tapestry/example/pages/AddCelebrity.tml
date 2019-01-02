@@ -5,7 +5,7 @@
     </head>
 	<body>
 		<h1>Add Celebrity</h1>
-		<t:beaneditform t:id="celebrity" />
+		<t:beaneditform t:id="celebrity" t:submitLabel="Save" />
 		
 	</body>      
 </html>
