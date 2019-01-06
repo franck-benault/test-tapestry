@@ -31,6 +31,12 @@
 	    		</t:radiogroup>
 	    		</td>
 	    	</tr>	
+	    	<tr>
+	    		<td>Birth Date:</td>
+	    		<td>
+	    		<input type="text" t:type="datefield" t:value="dateOfBirth" t:format="dd/MM/yy" />Female	    		
+	    		</td>
+	    	</tr>	
 	    		<t:if t:test="subscribe">
 	    		<tr>
 	    		<td>email</td>

@@ -1,5 +1,7 @@
 package org.tapestry.example.pages;
 
+import java.util.Date;
+
 import org.apache.tapestry5.EventConstants;
 import org.apache.tapestry5.SelectModel;
 import org.apache.tapestry5.annotations.InjectComponent;
@@ -35,6 +37,10 @@ public class Registration {
 	@Persist
 	@Property
 	private Gender gender;
+	
+	@Persist
+	@Property
+	private Date dateOfBirth;
 	
 	@Persist
 	@Property
