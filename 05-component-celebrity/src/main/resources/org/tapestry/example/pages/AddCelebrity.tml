@@ -5,7 +5,17 @@
     </head>
 	<body>
 		<h1>Add Celebrity</h1>
-		<t:beaneditform t:id="celebrity" t:submitLabel="Save" />
+		<t:beaneditform t:id="celebrity" t:submitLabel="Save" 
+		exclude="id"
+		reorder="firstName,lastName,dateOfBirth,birthDateVerified,occupation,biography"
+		>
+		<p:biography>
+		<t:label for="biography" />
+		<t:textarea t:id="biography" t:value="celebrity.biography" 
+		cols="30" rows="5"
+		/>
+		</p:biography>
+		</t:beaneditform>
 		
 	</body>      
 </html>

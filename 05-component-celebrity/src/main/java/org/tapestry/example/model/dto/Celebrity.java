@@ -14,6 +14,7 @@ public class Celebrity {
 	private Occupation occupation;
 	private Date dateOfBirth;
 	private String biography;
+	private boolean birthDateVerified;
 	
 	public Date getDateOfBirth() {
 		return dateOfBirth;
@@ -63,6 +64,12 @@ public class Celebrity {
 	}
 	public void setBiography(String biography) {
 		this.biography = biography;
+	}
+	public boolean isBirthDateVerified() {
+		return birthDateVerified;
+	}
+	public void setBirthDateVerified(boolean birthDateVerified) {
+		this.birthDateVerified = birthDateVerified;
 	}
 	
 
