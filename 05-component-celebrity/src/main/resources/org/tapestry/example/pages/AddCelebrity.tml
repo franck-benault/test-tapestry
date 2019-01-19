@@ -5,6 +5,7 @@
     </head>
 	<body>
 		<h1>Add Celebrity</h1>
+		<div class="t-beaneditor">
 		<t:beaneditform t:id="celebrity" t:submitLabel="Save" 
 		exclude="id"
 		reorder="firstName,lastName,dateOfBirth,birthDateVerified,occupation,biography"
@@ -16,6 +17,7 @@
 		/>
 		</p:biography>
 		</t:beaneditform>
+		</div>
 		
 	</body>      
 </html>
