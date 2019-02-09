@@ -134,6 +134,17 @@ String  | page name
 Class   | class of the page
 Object  | instance of a page (@InjectPage
 
+## Form and validation
+### Validation in tml
+```html
+	<input type="text" t:type="textfield" t:id="username"
+	t:validate="required,minlength=3,maxlength=8" />
+```
+
+### Validation using annotations
+#### Tapestry annotation
+#### Bean validator (JSR-303)
+
 ## Documentation and examples
 ### Books
 * Tapestry 5 from Alexander Kolesnikov (2008)
