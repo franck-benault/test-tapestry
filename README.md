@@ -136,6 +136,7 @@ Object  | instance of a page (@InjectPage
 
 ## Form and validation
 ### Validation in tml
+Example
 ```html
 	<input type="text" t:type="textfield" t:id="username"
 	t:validate="required,minlength=3,maxlength=8" />
@@ -143,6 +144,13 @@ Object  | instance of a page (@InjectPage
 
 ### Validation using annotations
 #### Tapestry annotation
+Example:
+```java
+	@Validate("required,minlength=3,maxlength=14")
+	@Property
+	private String userName;
+```
+
 #### Bean validator (JSR-303)
 
 ## Documentation and examples
