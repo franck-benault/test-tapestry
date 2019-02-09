@@ -146,6 +146,10 @@ Example
 #### Tapestry annotation
 Example:
 ```java
+import org.apache.tapestry5.beaneditor.Validate;
+
+../..
+
 	@Validate("required,minlength=3,maxlength=14")
 	@Property
 	private String userName;
