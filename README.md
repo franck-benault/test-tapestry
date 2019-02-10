@@ -141,7 +141,7 @@ Example
 	<input type="text" t:type="textfield" t:id="username"
 	t:validate="required,minlength=3,maxlength=8" />
 ```
-validator
+Existing validators :
 * required
 * minlength
 * maxlength
