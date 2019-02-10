@@ -141,6 +141,13 @@ Example
 	<input type="text" t:type="textfield" t:id="username"
 	t:validate="required,minlength=3,maxlength=8" />
 ```
+validator
+* required
+* minlength
+* maxlength
+* min
+* max
+* regex
 
 ### Validation using annotations
 #### Tapestry annotation
